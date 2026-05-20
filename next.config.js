@@ -4,12 +4,10 @@ const nextConfig = {
     remotePatterns: [
       { protocol: 'https', hostname: '**' },
     ],
+    unoptimized: true,
   },
-  experimental: {
-    serverActions: {
-      bodySizeLimit: '10mb',
-    },
-  },
+  // Use webpack for now to avoid turbopack tracing issues with large static dirs
+  // turbopack: {},  // Keep default (webpack) for stability
 };
 
 module.exports = nextConfig;
