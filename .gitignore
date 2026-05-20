@@ -30,3 +30,4 @@ public/templates/*
 !public/templates/.gitkeep
 core.*
 temp/
+.vercel
